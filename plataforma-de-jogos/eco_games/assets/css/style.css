@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Bangers", system-ui;
+    padding-top: 60px; /* Espaço para o menu fixo */
+}
+
+/* Container principal do menu */
+.menu-fixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1b1b1b;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* Profundidade */
+}
+
+/* Logo */
+.logo {
+    margin-right: 30px; /* Espaço entre logo e itens do menu */
+}
+
+.logo img {
+    height: 32px; /* Altura padrão para logos */
+}
+
+/* Container de navegação principal */
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+/* Menu principal (Início, Biblioteca) */
+.menu-inicio_biblioteca {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Itens do menu principal */
+.menu-inicio_biblioteca a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 550; /* Peso médio para melhor legibilidade */
+    padding: 8px 0; /* Espaçamento vertical */
+    transition: color 0.3s;
+}
+
+.menu-inicio_biblioteca a:hover {
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+.menu-esquerda{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Container da direita (Suporte + Login) */
+.menu-direita {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaço entre Suporte e Login */
+    
+}
+
+/* Barra de pesquisa */
+.form-busca {
+    display: inline;
+    margin: 0 15px; /* Espaço igual dos lados */
+    flex-grow: 1; /* Ocupa o espaço disponível */
+    max-width: 500px; /* Limite de largura */
+}
+
+.form-busca input {
+    padding: 8px 15px;
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: white;
+    transition: width 1.0s ease; /* Animacao quando mudar "algo" */
+}
+.form-busca input:hover { /* "focus" input é clicado, selecionado ou ativado (pelo mouse ou teclado) | "hover" passar o mouse por cima */
+  width: 350px; /* aumenta ao clicar */
+  outline: none;
+}
+
+/* Estilo para Suporte e Login */
+.menu-direita a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 550;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.menu-direita a:hover {
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+/* Estilo específico para o botão de Login */
+.btn-login {
+    background-color: #15059c; 
+}
+
+.btn-login:hover {
+    background-color: #1a02f5;
+    color: #ffffff;
+}
+
+.menu-filtro{
+    margin: 25px;
+    margin-top: 20px;
+}
+.menu-filtro a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333333;
+    display: flex;
+    border-radius: 45%;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    position: fixed;
+    top: 90px;
+    padding: 8px 12px;
+}
+.menu-filtro img{
+    width: 45px;
+    height: 30px;  
+}
+
+
+#session-1{
+    min-height: 100vh;
+    background-color: black;
+
+}
+
+#session-2{
+    min-height: 100vh;
+    background-color: rgb(58, 58, 58);
+    
+}
+
+#session-3{
+    min-height: 100vh;
+    background-color: rgb(131, 131, 131);
+    
+}
+
+#session-4_Rodape{
+    min-height: 15vh;
+    background-color: #000000;
+}
+
+
+.seta{
+    width: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+}

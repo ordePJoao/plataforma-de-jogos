@@ -1,0 +1,50 @@
+.navbar{
+    /* Tamanho ajustavel dv */
+    width: 100dvw; 
+    height: 10dvh;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    /* rem relativo ao dispostivo */
+    font-size: 2rem;
+}
+
+/* hover = Ao passar o mouse em cima do objeto */
+.navbar a:hover{
+    color: #969696;
+}
+
+/* active = Ao clicar no objeto */
+.navbar a:active{
+    color: #646464;
+}
+
+.logo__navbar{
+    margin-left: 1rem;
+    width: 3.44rem;
+    height: 4rem;
+}
+
+.store__navbar{
+    margin-left: 2rem;
+}
+
+.biblioteca__navbar{
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+.pesquisa__navbar{
+    background-color: #121212;
+    color: white;
+    width: 10rem;
+    height: 2rem;
+    font-size: 1.3rem;
+    border: #242424 1px solid;
+}
