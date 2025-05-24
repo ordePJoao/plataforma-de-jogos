@@ -1,0 +1,29 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node.js (se usar npm, vite, webpack etc.) | FERRAMENTAS DE JS
+node_modules/
+dist/
+build/
+.env
+
+# Cache e logs
+*.log
+.cache/
+*.tmp
+*.bak
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Arquivos de sistema operacional
+ehthumbs.db
+Icon?
+._*
+
+# Arquivos de deploy do Netlify, Vercel, etc (se aplicável)
+.netlify/
+.vercel/
