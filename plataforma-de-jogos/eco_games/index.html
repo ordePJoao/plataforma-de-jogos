@@ -7,6 +7,7 @@
     <title>ECO GAMES</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="script.js"> </script> <!-- Defer, JS carrega depois do html -->
 </head>
 
 <body>
@@ -43,11 +44,48 @@
 
  </header>
 
- <div class="menu-filtro">
-    <a href="#Menus"> Menu
-    <div id="seta-menu"> <img src="./assets/images/seta_menus.png" alt="Abrir menus"> </div> 
-    </a>
- </div>
+ <nav>
+
+    <div class="menu-lateral-close"> <!-- MENU  -->
+        <button aria-haspopup="true" aria-expanded="false"> MENU <!-- aria = acessibilidade -->
+        <div id="seta-menu"> <img src="./assets/images/seta_menus.png" alt="Abrir menus"> </div> 
+        </button></a>
+    </div>
+
+    <div class="menu-lateral-open">
+            <ul> <!-- ÍCONES DESTAQUE -->
+                <li> </li>
+                <li> </li>
+            </ul>
+
+            <ul> <!-- ÍCONES CATEGORIAS -->
+                <li> </li>
+                <li> </li>
+            </ul>
+            
+            <ul id="menu-lateral-open-destaque">
+                <li> <a href="#Carrinho">CARRINHO</a> </li>
+                <li> <a href="#Lista de Desejos">LISTA DE DESEJOS</a> </li>
+                <li>CATEGORIAS</li>
+            </ul>
+                <div class="menu-lateral-open-categorias">
+                    <ul>
+                        <li>ACÃO</li>
+                        <li>CORRIDA</li>
+                        <li>FPS</li>
+                        <li>RPG</li>
+                        <li>AVENTURA</li>
+                        <li>LUTA</li>
+                        <li>SIMULAÇÃO</li>
+                        <li>MUSICAL</li>
+                        <li>ESPORTES</li>
+                        <li>ESTRATÉGIA</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</nav>
+
 
 
     <div id="session-1"> 
@@ -55,7 +93,10 @@
 
 
         <div class="games_por_valor">
-            <h1></h1>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
+            <div class="game"></div>
         </div>
     </div>
 
