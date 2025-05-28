@@ -11,7 +11,7 @@ body {
     background-color: #000000;
     color: #ffffff;
     font-family: "Bangers", system-ui;
-    padding-top: 60px; /* Espaço para o menu fixo */
+    padding-top: 90px; /* Espaço para o menu fixo */
 }
 
 /* Container principal do menu */
@@ -58,7 +58,7 @@ nav {
 .menu-inicio_biblioteca a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 550; /* Peso médio para melhor legibilidade */
     padding: 8px 0; /* Espaçamento vertical */
     transition: color 0.3s;
@@ -75,11 +75,11 @@ nav {
   gap: 20px;
 }
 
-/* Container da direita (Suporte + Login) */
+/* Container da direita (Carrinho + Login) */
 .menu-direita {
     display: flex;
     align-items: center;
-    gap: 20px; /* Espaço entre Suporte e Login */
+    gap: 20px; /* Espaço entre Carrinho e Login */
     
 }
 
@@ -104,11 +104,11 @@ nav {
   outline: none;
 }
 
-/* Estilo para Suporte e Login */
+/* Estilo para Carrinho e Login */
 .menu-direita a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 550;
     padding: 8px 12px;
     border-radius: 4px;
@@ -159,7 +159,7 @@ nav {
 
 
 #session-1{
-    min-height: 95vh;
+    min-height: 70vh;
     background-color: black;
     display: flex;
     align-items: center;
