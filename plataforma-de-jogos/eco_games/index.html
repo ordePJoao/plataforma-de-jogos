@@ -11,48 +11,45 @@
 </head>
 
 <body>
- <header class="menu-fixo"> 
-    <!-- logo    store biblioteca      pesquisa                         Suporte   Login -->
-    
-    <div class="logo">
-        <img src="Logo.img" alt="Eco Games Logo">
+ <header class="menu-fixo">
+    <!-- Parte Esquerda (Logo + Menu) -->
+    <div class="menu-esquerda">
+        <div class="logo">
+            <img src="Logo.img" alt="Eco Games Logo">
+        </div>
+        
+        <nav>
+            <ul class="menu-inicio_biblioteca">
+                <li><a href="#store">Inicio</a></li>
+                <li><a href="#biblioteca">Biblioteca</a></li>
+            </ul>
+        </nav>
     </div>
     
-    <nav>
-        <!-- Menu principal -->
-        <div class="menu-esquerda">
-        <ul class="menu-inicio_biblioteca">
-        
-            <li><a href="#store">Inicio</a></li>
-            <li><a href="#biblioteca">Biblioteca</a></li>
-        </ul>
-        
-        <!-- Barra de pesquisa -->
-        <form class="form-busca" action="#paginadeprocessamento" method="get">
-            <input placeholder="Pesquise um jogo" type="search" name="busca" aria-label="Pesquisar jogos">
-            <button type="submit">Pesquisar</button>
-        </form>
-
-        </div>
-        
-        <!-- Menu direito (Suporte + Login) -->
-        <div class="menu-direita">
-            <a href="#carrinho">CARRINHO</a>
-            <a href="#login" class="btn-login">Login</a>
-        </div>
-    </nav>
-
- </header>
+    <!-- Barra de Pesquisa (Centro) -->
+    <form class="form-busca" action="#paginadeprocessamento" method="get">
+        <input placeholder="Pesquise um jogo" type="search" name="busca" aria-label="Pesquisar jogos">
+        <button id="btn-pesquisar" type="submit">🔎</button>
+    </form>
+    
+    <!-- Parte Direita (Carrinho + Login) -->
+    <div class="menu-direita">
+        <a href="#suporte">Suporte</a>
+        <a href="#login" class="btn-login">Login</a>
+    </div>
+</header>
 
  <nav>
 
     <div class="menu-lateral-close"> <!-- MENU  -->
-        <button aria-haspopup="true" aria-expanded="false"> MENU <!-- aria = acessibilidade -->
+        <button onclick="abrirMenu()" onfocus="abrirMenu()" o aria-haspopup="true" aria-expanded="false"> MENU <!-- aria = acessibilidade -->
         <div id="seta-menu"> <img src="./assets/images/seta_menus.png" alt="Abrir menus"> </div> 
         </button></a>
     </div>
 
-    <div class="menu-lateral-open">
+    <div class="menu-lateral-abrir" id="abrir-menu">
+
+        <div class="menu-lateral-open">
             <ul> <!-- ÍCONES DESTAQUE -->
                 <li> </li>
                 <li> </li>
@@ -68,7 +65,8 @@
                 <li> <a href="#Lista de Desejos">LISTA DE DESEJOS</a> </li>
                 <li>CATEGORIAS</li>
             </ul>
-                <div class="menu-lateral-open-categorias">
+
+            <div class="menu-lateral-open-categorias">
                     <ul>
                         <li>ACÃO</li>
                         <li>CORRIDA</li>
@@ -81,7 +79,7 @@
                         <li>ESPORTES</li>
                         <li>ESTRATÉGIA</li>
                     </ul>
-                </div>
+            </div>
         </div>
     </div>
 </nav>
