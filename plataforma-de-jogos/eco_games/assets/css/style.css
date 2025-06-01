@@ -107,14 +107,20 @@ body {
 
 .menu-direita {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 15px;
     flex-shrink: 0; /* Impede que encolha demais */
     margin-left: auto; /* Empurra para a direita */
 }
 
-
 /* Estilo para Carrinho e Login */
+.menu-direita img{
+    width: 37px;
+    transition: transform 0.3s;
+}
+.menu-direita img:hover{
+    transform: scale(1.2);
+}
 .menu-direita a {
     color: #ffffff;
     text-decoration: none;
@@ -148,7 +154,7 @@ body {
     background-color: #333333;
     display: flex;
     border-radius: 10%;
-    z-index: 1000; /* Profundidade */
+    z-index: 1001; /* Profundidade */
     cursor: pointer; /* "Maozinha" */
     align-items: center;
     font-family: "Bangers", system-ui;
@@ -167,22 +173,63 @@ body {
     height: 30px;  
 }
 
-.menu-lateral-abrir{ /* class pra esconder o menu */
+.menu-lateral-fechado{ /* class pra esconder o menu */
     display: none;
 }
 
-.abrir-menu{ /* id menu aberto */
+.menu-lateral-aberto{ /* id menu aberto */
+    display: flex;
     z-index: 1000;
-    position: relative;
-
+    position: absolute;
+    background-color: #292929;
+    border-radius: 1ch;
+    padding: 20px 20px 20px 10px;
+    top: 165px;
+    left: 45px;
+    width: 30vh;
+    height: 65vh;
+}
+.menu-lateral-open{
+    width: 100%;
+}
+.menu-lateral-open-destaque {
+    padding: 0px 0px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre links */
+}
+.menu-lateral-open-destaque li{
+    font-size: 30px;
+}
+.menu-lateral-open-destaque a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu-lateral-open-destaque a:hover{
+    transform: scale(1.5);
+    color: #ffffffbd;
 }
 
-.menu-lateral-open{ /* arrumar */
+.menu-lateral-open-categorias{
+    margin-left: 60px;
+    height: 460px;
 }
-
+.menu-lateral-open-categorias li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+.menu-CATEGORIAS{
+    margin-left: 20px;
+}
+.menu-lateral-open-categorias a{
+    color: #0090e4;
+    text-decoration: none;
+}
+ 
 
 #session-1{
-    min-height: 70vh;
+    min-height: 90dvh;
     background-color: black;
     display: flex;
     align-items: center;
@@ -265,5 +312,4 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    
 }

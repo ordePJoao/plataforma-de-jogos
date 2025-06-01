@@ -34,7 +34,7 @@
     
     <!-- Parte Direita (Carrinho + Login) -->
     <div class="menu-direita">
-        <a href="#suporte">Suporte</a>
+        <div class="carrinho"> <a href="#Carrinho"><img src="./assets/images/icon_carrinho.svg" alt="carrinho"></a> </div>
         <a href="#login" class="btn-login">Login</a>
     </div>
 </header>
@@ -42,43 +42,31 @@
  <nav>
 
     <div class="menu-lateral-close"> <!-- MENU  -->
-        <button onclick="abrirMenu()" onfocus="abrirMenu()" o aria-haspopup="true" aria-expanded="false"> MENU <!-- aria = acessibilidade -->
-        <div id="seta-menu"> <img src="./assets/images/seta_menus.png" alt="Abrir menus"> </div> 
-        </button></a>
+        <button aria-haspopup="true" aria-expanded="false" id="botaoMenu"> MENU  ▼ <!-- aria = acessibilidade --> </button>
     </div>
 
-    <div class="menu-lateral-abrir" id="abrir-menu">
+    <div class="menu-lateral-fechado" id="abrir-menu">
 
-        <div class="menu-lateral-open">
-            <ul> <!-- ÍCONES DESTAQUE -->
-                <li> </li>
-                <li> </li>
-            </ul>
-
-            <ul> <!-- ÍCONES CATEGORIAS -->
-                <li> </li>
-                <li> </li>
-            </ul>
+        <div class="menu-lateral-open">                                                                                                                           
             
-            <ul id="menu-lateral-open-destaque">
-                <li> <a href="#Carrinho">CARRINHO</a> </li>
+            <ul class="menu-lateral-open-destaque">
                 <li> <a href="#Lista de Desejos">LISTA DE DESEJOS</a> </li>
-                <li>CATEGORIAS</li>
+                <li class="menu-CATEGORIAS">CATEGORIAS ▼</li>
             </ul>
 
             <div class="menu-lateral-open-categorias">
-                    <ul>
-                        <li>ACÃO</li>
-                        <li>CORRIDA</li>
-                        <li>FPS</li>
-                        <li>RPG</li>
-                        <li>AVENTURA</li>
-                        <li>LUTA</li>
-                        <li>SIMULAÇÃO</li>
-                        <li>MUSICAL</li>
-                        <li>ESPORTES</li>
-                        <li>ESTRATÉGIA</li>
-                    </ul>
+                <ul>
+                    <li><a href="#ACAO">ACÃO</a></li>
+                    <li><a href="#CORRIDA">CORRIDA</a></li>
+                    <li><a href="#FPS">FPS</a></li>
+                    <li><a href="#RPG">RPG</a></li>
+                    <li><a href="#AVENTURA">AVENTURA</a></li>
+                    <li><a href="#LUTA">LUTA</a></li>
+                    <li><a href="#SIMULACAO">SIMULAÇÃO</a></li>
+                    <li><a href="#MUSICAL">MUSICAL</a></li>
+                    <li><a href="ESPORTES">ESPORTES</a></li>
+                    <li><a href="#ESTRATEGIA">ESTRATÉGIA</a></li>
+                </ul>
             </div>
         </div>
     </div>
