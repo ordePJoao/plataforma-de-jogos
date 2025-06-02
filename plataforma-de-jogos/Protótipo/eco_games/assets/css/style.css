@@ -11,7 +11,7 @@ body {
     background-color: #000000;
     color: #ffffff;
     font-family: "Bangers", system-ui;
-    padding-top: 90px; /* Espaço para o menu fixo */
+    padding-top: 70px; /* Espaço para o menu fixo */
 }
 
 /* Container principal do menu */
@@ -239,7 +239,7 @@ body {
 }
 
 #session-1{
-    min-height: 90dvh;
+    min-height: 95dvh;
     background-color: black;
     display: flex;
     align-items: center;
@@ -257,7 +257,7 @@ body {
 }
 
 #session-2{
-    min-height: 100vh;
+    min-height: 100dvh;
     background-color: rgb(58, 58, 58);
     
 }
