@@ -175,8 +175,8 @@ body {
 
 .menu-lateral-aberto{ /* id menu aberto */
     display: flex;
-    z-index: 1000;
-    position: absolute;
+    z-index: 1001;
+    position: fixed;
     background-color: #292929;
     border-radius: 1ch;
     padding: 20px 20px 20px 10px;
