@@ -14,7 +14,16 @@ menuLateral.addEventListener("mouseleave", () => {
 // Fechar menu ao clicar fora dele
 window.addEventListener("click", (event) => {
   const clicouFora = !menuLateral.contains(event.target) && !botaoMenu.contains(event.target);
-  if (clicouFora) fecharMenu();
+  const clicouNoBotao = botaoMenu.contains(event.target);
+  if (clicouFora) {
+    fecharMenu();
+  }
+
+  if(clicouNoBotao){
+    fecharMenu();
+  }
+
+
 });
 
 // Abrir menu

@@ -230,6 +230,7 @@ dialog::backdrop{ /* Fundo atras do modal */
 
 .menu-lateral-close{
     display: flex;
+    position: relative;
 }
 .menu-lateral-close button{
     left: 20px;

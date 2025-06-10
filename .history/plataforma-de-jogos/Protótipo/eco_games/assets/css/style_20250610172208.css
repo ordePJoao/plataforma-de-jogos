@@ -116,7 +116,7 @@ body {
 
 /* Estilo para Carrinho e Login */
 .menu-direita img{
-    width: 2.4rem;
+    width: 37px;
     transition: transform 0.3s;
 }
 .menu-direita img:hover{
@@ -230,6 +230,7 @@ dialog::backdrop{ /* Fundo atras do modal */
 
 .menu-lateral-close{
     display: flex;
+    position: relative;
 }
 .menu-lateral-close button{
     left: 20px;
@@ -260,6 +261,7 @@ dialog::backdrop{ /* Fundo atras do modal */
 
 .menu-lateral-aberto{ /* id menu aberto */
     display: flex;
+    display: block;
     z-index: 1001;
     position: fixed;
     background-color: #1F2937;

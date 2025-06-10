@@ -116,7 +116,7 @@ body {
 
 /* Estilo para Carrinho e Login */
 .menu-direita img{
-    width: 2.4rem;
+    width: 37px;
     transition: transform 0.3s;
 }
 .menu-direita img:hover{
@@ -162,8 +162,6 @@ dialog::backdrop{ /* Fundo atras do modal */
     width: 30rem;
     height: 30rem; 
     padding: 10px 10px;
-    background-color: #272727;
-    color: #fafafa;
 }
 .modal-header{
     display: flex;
@@ -198,38 +196,16 @@ dialog::backdrop{ /* Fundo atras do modal */
 .input-group{
     display: flex;
     flex-direction: column;
-    padding: 20px 0 30px;
+    padding: 10px 0 10px;
 }
 .input-group label{
     font-size: 1.7rem;
-    font-weight: 500;
-}
-.input-group input{
-    border: 1px solid #23385a;
-    border-radius: 1ch;
-    height: 2rem;
-    background-color: #374151;
-    padding: 5px 10px;
-    font-size: 1.1rem;
-}
-.input-group input:focus{
-    background-color: #1e3269b4;
-    outline: 1px solid #FAFAFA; /* destaque da borda */
-}
-
-.input-group input:hover{
-    background-color: #1e3269b4;
-}
-.input-group input:user-valid{ /* Quando preenchido pelo usuario */
-    background-color: #4C596F;
-}
-
-.opcoes-senha{
-    display: flex;
+    font-weight: 500;   
 }
 
 .menu-lateral-close{
     display: flex;
+    position: relative;
 }
 .menu-lateral-close button{
     left: 20px;
@@ -265,7 +241,7 @@ dialog::backdrop{ /* Fundo atras do modal */
     background-color: #1F2937;
     border-radius: 1ch;
     padding: 20px 20px 20px 10px;
-    top: 12rem;
+    top: 11rem;
     left: 4rem;
     width: 20rem;
     height: 66.5%;

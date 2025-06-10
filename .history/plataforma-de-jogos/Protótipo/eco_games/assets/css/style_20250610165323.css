@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-*:not (dialog){ /* Pra tudo MENOS O dialog */
+*:not(dialog) { /* Pra tudo, exceto o dialog */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,14 +17,14 @@ body {
 /* Container principal do menu */
 .menu-fixo {
     position: fixed;
-    display: flex;
     top: 0;
     left: 0;
     width: 100%;
-    height: 4rem;
+    height: 70px;
     background-color: #000000;
     color: white;
     padding: 10px 30px;
+    display: flex;
     justify-content: space-between; /* Distribui os espaços igualmente */
     align-items: center;
     z-index: 1000;
@@ -103,7 +103,9 @@ body {
 .form-busca input:not(:placeholder-shown) {
     width: 500px;
 }
-
+.btn-login{
+    background-color: #15059c; /* Arrumar dps NAO FUNCIONA */
+}
 
 .menu-direita {
     display: flex;
@@ -111,31 +113,27 @@ body {
     gap: 15px;
     flex-shrink: 0; /* Impede que encolha demais */
     margin-left: auto; /* Empurra para a direita */
-    margin-right: 3rem;    
 }
 
 /* Estilo para Carrinho e Login */
 .menu-direita img{
-    width: 2.4rem;
+    width: 37px;
     transition: transform 0.3s;
 }
 .menu-direita img:hover{
     transform: scale(1.2);
 }
-.menu-direita button {
+.menu-direita a {
     color: #ffffff;
     text-decoration: none;
-    font-family: "Bangers", system-ui;;
     font-size: 3dvh;
     font-weight: 550;
-    padding: 5px 15px;
+    padding: 8px 12px;
     border-radius: 4px;
     transition: all 0.3s;
-    border-width: 0px;
-    border-radius: 0.5ch;
 }
 
-.menu-direita button:hover {
+.menu-direita a:hover {
     color: #b8b6b4;
     transform: scale(1.1);
 }
@@ -143,102 +141,29 @@ body {
 /* Estilo específico para o botão de Login */
 .btn-login {
     background-color: #1E3A8A; 
+    padding: 10px 12px;
+    border-radius: 1cqh;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #FAFAFA;
+    font-family: "Bangers", system-ui;
 }
-
 .btn-login:hover {
     background-color: #3B82F6;
     color: #F3F4F6;
 }
 
-/* modal Login */
+dialog::backdrop
 
-dialog::backdrop{ /* Fundo atras do modal */
-    background-color: rgb(0, 0, 0, 0.8);
-}
-
-#modal-1{
-    border: none;
-    border-radius: 2ch;
-    width: 30rem;
-    height: 30rem; 
-    padding: 10px 10px;
-    background-color: #272727;
-    color: #fafafa;
-}
-.modal-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-.modal-title{
-    left: 2rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
-    font-size: 1.3rem;
-    font-weight: 500;    
-}
-.close-modal{
-    cursor: pointer;
-    border: none;
-    border-radius: 0.3ch;
-    background-color: #1E3A8A;
-    color:#0A0A0A;
-    font-size: 1.8rem;
-    height: 2rem;
-}
-.modal-header img{ /* imagem do button */
-    width: 1rem;    
-}
-.modal-body{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.input-group{
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0 30px;
-}
-.input-group label{
-    font-size: 1.7rem;
-    font-weight: 500;
-}
-.input-group input{
-    border: 1px solid #23385a;
-    border-radius: 1ch;
-    height: 2rem;
-    background-color: #374151;
-    padding: 5px 10px;
-    font-size: 1.1rem;
-}
-.input-group input:focus{
-    background-color: #1e3269b4;
-    outline: 1px solid #FAFAFA; /* destaque da borda */
-}
-
-.input-group input:hover{
-    background-color: #1e3269b4;
-}
-.input-group input:user-valid{ /* Quando preenchido pelo usuario */
-    background-color: #4C596F;
-}
-
-.opcoes-senha{
-    display: flex;
-}
-
-.menu-lateral-close{
-    display: flex;
-}
 .menu-lateral-close button{
-    left: 20px;
+    margin: 25px;
+    margin-top: 20px;
     text-decoration: none;
     color: #F3F4F6;
     background-color: #374151;
     display: flex;
-    border-width: 0px;
-    border-radius: 1ch;
+    border-radius: 10%;
     z-index: 1001; /* Profundidade */
     cursor: pointer; /* "Maozinha" */
     align-items: center;
@@ -246,8 +171,8 @@ dialog::backdrop{ /* Fundo atras do modal */
     font-size: 25px;
     font-weight: 200;
     position: fixed;
-    top: 7rem;
-    padding: 0.8rem 0.8rem;
+    top: 90px;
+    padding: 5px 8px;
 }
 .menu-lateral-close button:hover {
     background-color: #4B5563;
@@ -265,11 +190,10 @@ dialog::backdrop{ /* Fundo atras do modal */
     background-color: #1F2937;
     border-radius: 1ch;
     padding: 20px 20px 20px 10px;
-    top: 12rem;
-    left: 4rem;
-    width: 20rem;
-    height: 66.5%;
-    margin-right: 40px;
+    top: 165px;
+    left: 45px;
+    width: 30vh;
+    height: 65vh;
 }
 .menu-lateral-open{
     width: 100%;
@@ -278,10 +202,10 @@ dialog::backdrop{ /* Fundo atras do modal */
     padding: 0px 0px 5px 10px;
     display: flex;
     flex-direction: column;
-    gap: 0.8rem; /* Espaço entre links */
+    gap: 25px; /* Espaço entre links */
 }
 .menu-lateral-open-destaque li{
-    font-size: 2.3rem;
+    font-size: 30px;
     margin: 5px;
 }
 .menu-lateral-open-destaque a{
@@ -293,7 +217,7 @@ dialog::backdrop{ /* Fundo atras do modal */
 .menu-lateral-open-destaque img{
     margin-left: 10px;
     margin-top: 5px;
-    width: 2.3rem;
+    width: 30px;
     max-height: max-content;
 }
 .menu-lateral-open-destaque a:hover{
@@ -302,13 +226,13 @@ dialog::backdrop{ /* Fundo atras do modal */
 }
 
 .menu-lateral-open-categorias{
-    margin-left: 4rem;
-    height: 100%;
+    margin-left: 50px;
+    height: 460px;
 }
 .menu-lateral-open-categorias li{
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 3dvh;
+    font-size: 25px;
 }
 .menu-CATEGORIAS{
     margin-left: 20px;
@@ -338,17 +262,15 @@ dialog::backdrop{ /* Fundo atras do modal */
     height: 35vh;
     align-self: flex-end;
     border-radius: 1ch;
-    flex-direction: column;
 }
 
 .games_por_valor-valores{
     display: flex;
-    width: 98%;
+    width: 100%;
     height: 30px;
     justify-content: flex-end;
     margin-top: 15px;
     margin-right: 10px;
-    margin-bottom: 20px;
     gap: 10px;
 }
 .games_por_valor-valores button{
@@ -366,10 +288,6 @@ dialog::backdrop{ /* Fundo atras do modal */
 }
 .games_por_valor-valores button:hover {
     background-color: #3B82F6; /* Azul claro para hover */
-}
-
-.games_por_valor-carrosel{
-
 }
 
 #session-2{
